@@ -15,7 +15,7 @@
 		C765451A1FD8833500DBACE9 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410E9C01EF12B5A001829A5 /* Solar.framework */; };
 		C765451B1FD8833500DBACE9 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76544F91FD8577000DBACE9 /* Solar.framework */; };
 		C765451C1FD8833500DBACE9 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76545071FD87F6C00DBACE9 /* Solar.framework */; };
-		C765451D1FD8887600DBACE9 /* Solar Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B861EF96ACA00D76A4D /* Solar Tests.swift */; };
+		C765451D1FD8887600DBACE9 /* SolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B861EF96ACA00D76A4D /* SolarTests.swift */; };
 		C765451E1FD8887600DBACE9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B831EF96ABA00D76A4D /* City.swift */; };
 		F7FC5B661D469B4E00C4D3EB /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +56,7 @@
 		1410E9B81EF12AD4001829A5 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		1410E9C01EF12B5A001829A5 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14456B831EF96ABA00D76A4D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		14456B861EF96ACA00D76A4D /* Solar Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Solar Tests.swift"; sourceTree = "<group>"; };
+		14456B861EF96ACA00D76A4D /* SolarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarTests.swift; sourceTree = "<group>"; };
 		14456B891EF96AD900D76A4D /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CorrectResults.json; sourceTree = "<group>"; };
 		14456B8A1EF96AD900D76A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97837EAB1E4BB1DE000FEF64 /* Solar_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Solar_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,14 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14456B801EF96A8F00D76A4D /* Solar Tests */ = {
+		14456B801EF96A8F00D76A4D /* SolarTests */ = {
 			isa = PBXGroup;
 			children = (
-				14456B861EF96ACA00D76A4D /* Solar Tests.swift */,
+				14456B861EF96ACA00D76A4D /* SolarTests.swift */,
 				14456B811EF96A9E00D76A4D /* Helpers */,
 				14456B821EF96AA500D76A4D /* Resources */,
 			);
-			path = "Solar Tests";
+			path = SolarTests;
 			sourceTree = "<group>";
 		};
 		14456B811EF96A9E00D76A4D /* Helpers */ = {
@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F7FC5B5C1D469B2700C4D3EB /* Solar */,
-				14456B801EF96A8F00D76A4D /* Solar Tests */,
+				14456B801EF96A8F00D76A4D /* SolarTests */,
 				F7FC5B5B1D469B2700C4D3EB /* Products */,
 				C76545181FD8833500DBACE9 /* Frameworks */,
 			);
@@ -419,7 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C765451D1FD8887600DBACE9 /* Solar Tests.swift in Sources */,
+				C765451D1FD8887600DBACE9 /* SolarTests.swift in Sources */,
 				C765451E1FD8887600DBACE9 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +481,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RDDXV84A73;
@@ -512,7 +512,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RDDXV84A73;
@@ -540,7 +540,7 @@
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = RDDXV84A73;
-				INFOPLIST_FILE = "Solar Tests/Info.plist";
+				INFOPLIST_FILE = "SolarTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,7 +555,7 @@
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = RDDXV84A73;
-				INFOPLIST_FILE = "Solar Tests/Info.plist";
+				INFOPLIST_FILE = "SolarTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -799,7 +799,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RDDXV84A73;
@@ -826,7 +826,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RDDXV84A73;
