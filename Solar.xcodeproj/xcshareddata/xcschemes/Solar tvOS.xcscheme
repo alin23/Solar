@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C76544F81FD8577000DBACE9"
+               BlueprintIdentifier = "C76545061FD87F6C00DBACE9"
                BuildableName = "Solar.framework"
-               BlueprintName = "Solar_macOS"
+               BlueprintName = "Solar_tvOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C76544F81FD8577000DBACE9"
+            BlueprintIdentifier = "C76545061FD87F6C00DBACE9"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar_macOS"
+            BlueprintName = "Solar_tvOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,9 +70,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C76544F81FD8577000DBACE9"
+            BlueprintIdentifier = "C76545061FD87F6C00DBACE9"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar_macOS"
+            BlueprintName = "Solar_tvOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -88,9 +88,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C76544F81FD8577000DBACE9"
+            BlueprintIdentifier = "C76545061FD87F6C00DBACE9"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar_macOS"
+            BlueprintName = "Solar_tvOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
