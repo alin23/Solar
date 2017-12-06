@@ -90,6 +90,21 @@ final class Solar_iOSTests: XCTestCase {
         XCTAssertFalse(solar.isNighttime, "isNighttime is true for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
     
+    func testIsDayTime_isTrue_betweenSunriseAndSunsetInNonUtcTimezone() {
+        let daytime = Date(timeIntervalSince1970: 1486649810)
+        let city = cities.first(where: { $0.name == "Mexico City" })!
+        
+        guard
+            let solar = Solar(for: daytime, coordinate: city.coordinate)
+            else {
+                XCTFail("Cannot get solar")
+                return
+        }
+        
+        XCTAssertTrue(solar.isDaytime, "isDaytime is false for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isNighttime, "isNighttime is true for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+    
     func testIsDayTime_isTrue_exactlyAtSunrise() {
         let sunrise = Date(timeIntervalSince1970: 1486625181)
         let city = cities.first(where: { $0.name == "London" })!

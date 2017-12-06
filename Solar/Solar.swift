@@ -37,6 +37,7 @@ public struct Solar {
     
     public fileprivate(set) var sunrise: Date?
     public fileprivate(set) var sunset: Date?
+    public fileprivate(set) var solarNoon: Date?
     public fileprivate(set) var civilSunrise: Date?
     public fileprivate(set) var civilSunset: Date?
     public fileprivate(set) var nauticalSunrise: Date?
@@ -66,6 +67,9 @@ public struct Solar {
     public mutating func calculate() {
         sunrise = calculate(.sunrise, for: date, and: .official)
         sunset = calculate(.sunset, for: date, and: .official)
+        if let sunrise = sunrise, let sunset = sunset {
+            solarNoon = sunrise + ((sunset.timeIntervalSince(sunrise)) / 2)
+        }
         civilSunrise = calculate(.sunrise, for: date, and: .civil)
         civilSunset = calculate(.sunset, for: date, and: .civil)
         nauticalSunrise = calculate(.sunrise, for: date, and: .nautical)
