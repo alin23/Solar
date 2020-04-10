@@ -13,8 +13,8 @@ let package = Package(
         .library(name: "Solar", targets: ["Solar"]),
     ],
     targets: [
-        .target(name: "Solar"),
-        .testTarget(name: "Solar_Tests", dependencies: ["Solar"]),
+        .target(name: "Solar", path: "Solar"),
+        .testTarget(name: "Solar_Tests", dependencies: ["Solar"], path: "SolarTests"),
     ],
     swiftLanguageVersions: [.v5]
 )
